@@ -1,0 +1,41 @@
+.container__btn {
+  margin: 40px 0;
+}
+
+.row {
+  text-align: center;
+}
+
+.btn {
+  width: 350px;
+  height: 50px;
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.items {
+  margin: 20px;
+  padding-top: 30px;
+  padding-left: 10px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+

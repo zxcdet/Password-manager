@@ -1,1 +1,23 @@
-<p>login works!</p>
+<div class="row">
+  <mat-card>
+    <mat-card-title class="title">Login</mat-card-title>
+    <hr>
+    <form [formGroup]="form">
+      <h2>Email addresss</h2>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Email</mat-label>
+        <input matInput type="email" formControlName="email">
+        <mat-hint>Please enter your email</mat-hint>
+        <mat-error>Missing or invalid email</mat-error>
+      </mat-form-field>
+      <h2>Password</h2>
+      <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Password</mat-label>
+        <input matInput type="password" formControlName="password">
+        <mat-hint>Please enter your passsword</mat-hint>
+        <mat-error>Missing or invalid password</mat-error>
+      </mat-form-field>
+    </form>
+    <button mat-raised-button color="primary" class="btn" (click)="onLogin()" [disabled]="form.invalid">Login</button>
+  </mat-card>
+</div>

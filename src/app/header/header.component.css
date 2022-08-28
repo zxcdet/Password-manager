@@ -1,0 +1,36 @@
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0 30px;
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+}
+
+.title {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+}
+
+.nav button {
+  font-size: 17px;
+  font-family: Roboto, Helvetica Neue Light, Helvetica Neue, Helvetica, Arial, Lucida Grande, sans-serif;
+  line-height: 24px;
+  letter-spacing: 0.3px;
+  font-weight: 400;
+  height: 35px;
+  text-transform: uppercase;
+}
+
+.active {
+  background: rgba(0, 0, 0, .2);
+}
+
+.logo {
+  max-width: 90px;
+  max-height: 40px;
+  border-radius: 50px;
+  margin-left: 30px;
+}

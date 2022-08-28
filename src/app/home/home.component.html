@@ -1,1 +1,26 @@
-<p>home works!</p>
+<div class="row">
+  <div class="container__btn">
+    <button mat-raised-button color="primary"
+            class="btn"
+            (click)="openDialog()"
+    >
+      Add +
+    </button>
+  </div>
+</div>
+<div class="flex-column">
+  <div class="items" *ngFor="let item of passwordList
+    | paginate: { itemsPerPage: itemPage,currentPage: page,
+     totalItems:paginatLenght}">
+    <app-card-password [password]="item"
+                       (deleteEvent)="deleteCard($event)"
+                       (updateEvent)="editCards($event)">
+    </app-card-password>
+  </div>
+</div>
+<ng-container>
+  <pagination-controls
+    (pageChange)="page = $event"
+    (pageBoundsCorrection)="page = $event"
+    class="pagination"></pagination-controls>
+</ng-container>

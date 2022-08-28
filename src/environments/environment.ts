@@ -3,7 +3,16 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyCHsjPrDn2083AXpRgnN82zX_nhe35POHg",
+    authDomain: "password-manager-edb26.firebaseapp.com",
+    projectId: "password-manager-edb26",
+    storageBucket: "password-manager-edb26.appspot.com",
+    messagingSenderId: "477339033699",
+    appId: "1:477339033699:web:d9caf3dac22c90d02dd856",
+    measurementId: "G-CFZYNHXNQS"
+  }
 };
 
 /*
