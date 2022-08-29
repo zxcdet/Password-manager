@@ -21,7 +21,6 @@ import {RegisterComponent} from './register/register.component';
 import {HomeComponent} from './home/home.component';
 import {AppRoutingModule} from "./app-routing.module";
 import {environment} from "../environments/environment";
-import {LocalStorageService} from "./services/localStorage.service";
 import {DialogComponent} from './dialog/dialog.component';
 import {CardPasswordComponent} from './card-password/card-password.component';
 
@@ -53,7 +52,7 @@ import {CardPasswordComponent} from './card-password/card-password.component';
     MatProgressSpinnerModule,
     NgxPaginationModule
   ],
-  providers: [LocalStorageService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
